@@ -162,6 +162,11 @@ module.exports = {
         test: /\.scss$/,
         loaders: ['style', 'css', 'sass']
       },
+      {
+        test: /\.svg$/,
+        loader: 'react-svg-loader',
+        use: ['@svgr/webpack'],
+      },
       // ** STOP ** Are you adding a new loader?
       // Remember to add the new extension(s) to the "url" loader exclusion list.
     ]
